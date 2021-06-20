@@ -1,12 +1,24 @@
 squareSum :: Int -> Int -> Int
 squareSum x y = x * x + y * y
 
+--- >>> squareSum 1 2
+--- 5
+---
+
 identify :: a -> a
 identify x = x
+
+--- >>> identify 10
+--- 10
+---
 
 sum1 :: Int -> Int
 sum1 n =
     if n == 0 then 0 else sum1 (n-1) + n
+
+--- >>> sum1 10
+--- 55
+---
 
 sum2 :: Int -> Int
 sum2 n | n == 0  = 0
@@ -45,3 +57,10 @@ append (x : xs) ys = x : append xs ys
 -- >>> append [1, 2, 3] [4, 5]
 -- [1,2,3,4,5]
 --
+
+addThree :: Int -> Int -> Int -> Int
+addThree a b c = a + b + c
+
+--- >>> addThree 1 2 3
+--- 6
+---
