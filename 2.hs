@@ -88,8 +88,8 @@ myFilter p (x : xs)
     | p x = x : myFilter p xs
     | otherwise = myFilter p xs
 
--- >>> myFilter (> 0) [1, -2, 3, -4, 5, -6]
--- [1,3,5]
+-- >>> myFilter (> 0) [-1, -2, 3, -4, 5, -6]
+-- [3,5]
 --
 
 
