@@ -73,3 +73,22 @@
 
 -- QED.
 
+
+-- Lemma :
+-- revapp xs ys = rev xs ++ ys
+--     for all lists xs and ys.
+
+-- Proof.
+--     (아직 증명하지 않았음.)
+--     (다음회 숙제 - 아마 7회? 이 글은 6회 수업에 쓰는 중)
+
+-- Theorem : 
+-- rev xs = revapp xs []
+--     for all lists xs.
+-- Proof.
+-- rhs = revapp xs []
+--     = rev xs ++ [] by Lemma
+--     = rev xs       by Ex. 1
+--     = lhs
+
+-- QED
